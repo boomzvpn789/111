@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOMZVPN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #d64a1b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .download-section {
+            text-align: center;
+        }
+        select, button {
+            padding: 10px;
+            margin: 10px;
+            width: 45%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3px;
+            padding: 3px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        span {
+            margin-right: 5px;
+            font-size: 12px;
+        }
+        .copy-btn {
+            margin-left: auto;
+            padding: 1px 4px;
+            font-size: 10px;
+            width: 50px;
+        }
+        .apps-section ul li img {
+            height: 20px;
+        }
+        .apps-section ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        BOOM Z VPN TH
+    </div>
+
+    <div class="container">
+        <!-- Download Section -->
+        <div class="card download-section">
+            <img src="https://img5.pic.in.th/file/secure-sv1/cropped-1920-1080-1345576.jpeg" alt="Anime Girl" width="315" height="185">
+        </div>
+
+        <!-- Apps and Programs Section -->
+        <div class="card apps-section">
+            <h3>แอพที่สามารถใช้งาน ไฟล์</h3>
+            <ul>
+                <li>
+                    <span>V2RAY (Android)</span>
+                    <button class="copy-btn" onclick="copyToClipboard('V2RAY (Android)')">คัดลอก</button>
+                </li>
+                <li>
+                    <span>V2BOX (IOS)</span>
+                    <button class="copy-btn" onclick="copyToClipboard('V2BOX (IOS)')">คัดลอก</button>
+                </li>
+                <li>
+                    <span>NET MOD (Android)</span>
+                    <button class="copy-btn" onclick="copyToClipboard('NET MOD (Android)')">คัดลอก</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('คัดลอกเรียบร้อย: ' + text);
+            }, function() {
+                alert('ไม่สามารถคัดลอกได้');
+            });
+        }
+    </script>
+
+</body>
+</html>
